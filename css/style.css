@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+
+    color: #02040F;
+}
+
+body {
+    background-color: #E5DADA;
+
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+h1 {
+    color: #840032;
+}
+
+h2 {
+    margin-top: 6rem;
+    margin-bottom: 0;
+
+    color: #002642;
+}
+
+.card-box {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+
+    border: 3px dashed #E59500;
+    padding: 1rem;
+
+    border-radius: 1rem;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+
+    background-color: #E59500;
+
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card:nth-of-type(2n) {
+    transform: translateX(-184px);
+    background-color: transparent;
+    border: 3px dashed #840032;
+}
+
+
+.mx1 {
+    transform: matrix(1.2, 0.5, -0.2, 0.5, 2, -2);
+}
+
+.mx2 {
+    transform-origin: right bottom;
+    transform: matrix(0.1, 0.5, 0.5, 0.4, 2, -1);
+}
+
+.mx3 {
+    transform: matrix(-0.3, 0.8, -1, 0.3, 0, 1);
+}
+
+.mx4 {
+    transform-origin: center bottom;
+    transform: matrix(-1, -0.5, 0.3, -1, -50, -200);
+}
+
+.mx5 {
+    transform-origin: right top;
+    transform: matrix(0.2, -1.2, 0.2, 1.2, 0, -2);
+}
+
+.tr1 {
+    transform: translate(80px, -10px);
+}
+
+.tr2 {
+    transform: translateX(-30px);
+}
+
+.tr3 {
+    transform: translateY(-50%);
+}
+
+.tr4 {
+    transform: translateY(50px);
+}
+
+.tr5 {
+    transform: translate(-25%, 25%);
+}
+
+.sc1 {
+    transform-origin: left bottom;
+    transform: scaleX(50%);
+
+}
+
+.sc2 {
+    transform-origin: right bottom;
+    transform: scaleY(1.3);
+}
+
+.sc3 {
+    transform-origin: center bottom;
+    transform: scale(25%, -25%);
+}
+
+.sc4 {
+    transform: scaleX(1.5);
+}
+
+.sc5 {
+    transform-origin: left center;
+    transform: scale(-50%, 90%);
+}
+
+.skw1 {
+    transform-origin: right center;
+    transform: skewX(45deg);
+}
+
+.skw2 {
+    transform-origin: bottom center;
+    transform: skewY(-20deg);
+}
+
+.skw3 {
+    transform-origin: top left;
+    transform: skew(20deg, -10deg)
+}
+
+.skw4 {
+    transform-origin: bottom center;
+    transform: skew(-40deg, 10deg)
+}
+
+.skw5 {
+    transform: skew(5deg, 60deg);
+}
+
+.rt1 {
+    transform-origin: bottom left;
+    transform: rotateX(180deg);
+}
+
+.rt2 {
+    transform-origin: top right;
+    transform: rotateY(-120deg);
+}
+
+.rt3 {
+    transform-origin: center top;
+    transform: rotate(-30deg);
+}
+
+.rt4 {
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+}
+
+.rt5 {
+    transform-origin: right bottom;
+    transform: rotate(180deg);
+}
